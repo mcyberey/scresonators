@@ -10,7 +10,8 @@ import os
 # Get the long description from the README file
 long_description = open('README.md').read()
 # Get the version number from the VERSION file
-version_number = open('VERSION.txt').read().strip()
+# version_number = open('VERSION.txt').read().strip()
+version_number = "0.6.1"
 
 setup(
     name="scresonators-fit",
@@ -21,7 +22,6 @@ setup(
     description="Python library for measuring and fitting superconducting resonator data",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    classifiers=[],
     keywords="scresonators, superconducting resonators, resonator fit",
     packages=find_packages(include=["fit_resonator"]),  # Required
     python_requires = ">=3.9",
